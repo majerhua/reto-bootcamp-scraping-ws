@@ -39,7 +39,7 @@ const Postulant = Schema({
     country: String,
     email: String,
     name: String,
-    phone: Strin,
+    phone: String,
     resumen: String,
   },
   educationAll: [String],
