@@ -28,9 +28,11 @@ mongoose.connect(
 const db = mongoose.connection;
 
 var Postulant = Schema({
-  name: String,
-  about: String,
-  resumen: String,
+  basicProfile: {
+    name: String,
+    about: String,
+    resumen: String,
+  },
 });
 
 var modelPostulant = mongoose.model("postulants", Postulant);
