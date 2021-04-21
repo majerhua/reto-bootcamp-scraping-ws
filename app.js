@@ -27,12 +27,24 @@ mongoose.connect(
 
 const db = mongoose.connection;
 
-var Postulant = Schema({
+const Experience = Schema({
+  companyWork: String,
+  nameExperience: String,
+  timeWork: String,
+});
+
+const Postulant = Schema({
   basicProfile: {
-    name: String,
     about: String,
+    country: String,
+    email: String,
+    name: String,
+    phone: Strin,
     resumen: String,
   },
+  educationAll: [String],
+  experienceAll: [Experience],
+  urlLinkedin: String,
 });
 
 var modelPostulant = mongoose.model("postulants", Postulant);
